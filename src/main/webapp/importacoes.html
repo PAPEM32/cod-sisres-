@@ -1,0 +1,67 @@
+<!-- Bibliotecas Javascript -->
+<script type="text/javascript"
+	src="../library/javascript/suckerfish_keyboard.js"></script>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="../library/javascript/suckerfish_ie.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../default/dthr.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="../library/javascript/jquery_002.js"></script>
+<script type="text/javascript" src="../library/javascript/jquery.js"></script>
+<script type="text/javascript"
+	src="../library/javascript/jquery.tablesorter.js"></script>
+<script type="text/javascript"
+	src="../library/javascript/jquery.tablesorter.pager.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+</script>
+<!-- Hack pra css leitura cross browser -->
+<script type="text/javascript"
+	src="../library/javascript/css_browser_selector.js"></script>
+<!-- Prototype/Scriptaculous -->
+<script type="text/javascript"
+	src="../library/javascript/scriptaculous/prototype.js"></script>
+<script type="text/javascript"
+	src="../library/javascript/scriptaculous/scriptaculous.js"></script>
+
+<!-- Bibliotecas JS particulares do sistema -->
+<script type="text/javascript" src="../library/javascript/sisresJS.js"></script>
+<script type="text/javascript"
+	src="../library/javascript/sisresValidation.js"></script>
+
+<!-- Controladora de eventos JS -->
+<script type="text/javascript"
+	src="../library/javascript/sisresJScontrol.js"></script>
+
+<!-- Bibliotecas CSS -->
+<link href="../library/css/padrao_layout.css" rel="stylesheet"
+	type="text/css" media="screen" />
+<link href="../library/css/displaytag.css" rel="stylesheet"
+	type="text/css" media="screen" />
+
+<script>
+function maskDo()
+{
+	valField = document.getElementsByTagName('input');
+	var c = 0;
+	for (i=0; i < valField.length; i++)
+	{
+		if(valField[i].type == 'text')
+		{
+			if(valField[i].getAttribute('validate'))
+			{
+				if(isIE)
+				{
+					valField[i].onkeypress = function(){aplyMask(event)};
+				}
+				else
+				{
+					valField[i].onkeypress = function(event){aplyMask(event)};
+				}
+				
+				c++;
+			}
+		}
+	}
+}
+</script>

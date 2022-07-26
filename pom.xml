@@ -1,0 +1,368 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>mb.papem</groupId>
+    <artifactId>sisres</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>sisres Maven Webapp</name>
+
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+<!--
+    <repositories>
+        <repository>
+            <id>jboss-repo</id>
+            <name>Repositorio Jboss </name>
+            <url>https://repository.jboss.org/nexus/content/repositories/thirdparty-releases</url> -->
+            <!--<url>https://mvnrepository.com/artifact/org.jboss.bom/jboss-eap</url>-->
+<!--            
+        </repository>
+        <repository>
+            <id>jboss-eap</id>
+            <name>Repositorio Jboss EAP</name>
+            <url>https://maven.repository.redhat.com/ga/org/jboss/bom/jboss-eap/</url>
+        </repository>
+    </repositories>
+-->
+    <dependencies>
+        <!-- 		<dependency> -->
+        <!-- 			<groupId>junit</groupId> -->
+        <!-- 			<artifactId>junit</artifactId> -->
+        <!-- 			<version>3.8.1</version> -->
+        <!-- 			<scope>test</scope> -->
+        <!-- 		</dependency> -->
+
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>4.11</version>
+        </dependency>
+<!--        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>6.0</version>
+            <scope>provided</scope>
+        </dependency>-->
+        
+        <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+<!-- https://jarcasting.com/artifacts/io.undertow/undertow-jsp/ -->
+<dependency>
+    <groupId>io.undertow</groupId>
+    <artifactId>undertow-jsp</artifactId>
+    <version>1.0.0.Beta27</version>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/javax/javaee-web-api -->
+<dependency>
+    <groupId>javax</groupId>
+    <artifactId>javaee-web-api</artifactId>
+    <version>8.0</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+        <!-- https://mvnrepository.com/artifact/struts/struts -->
+        <!-- <dependency> -->
+        <!-- <groupId>struts</groupId> -->
+        <!-- <artifactId>struts</artifactId> -->
+        <!-- <version>1.2.4</version> -->
+        <!-- </dependency> -->
+
+
+<!-- https://mvnrepository.com/artifact/tomcat/jasper-compiler-jdt -->
+<dependency>
+    <groupId>tomcat</groupId>
+    <artifactId>jasper-compiler-jdt</artifactId>
+    <version>5.5.15</version>
+</dependency>
+
+    
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports</artifactId>
+        <version>6.20.0</version>
+        <exclusions>
+            <exclusion>
+                <groupId>eclipse</groupId>
+                <artifactId>jdtcore</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.eclipse.jdt.core.compiler</groupId>
+        <artifactId>ecj</artifactId>
+        <version>4.6.1</version>
+    </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/struts/struts -->
+        <dependency>
+            <groupId>struts</groupId>
+            <artifactId>struts</artifactId>
+            <version>1.2.4</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/struts/struts-legacy -->
+        <dependency>
+            <groupId>struts</groupId>
+            <artifactId>struts-legacy</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-l <properties> <maven.compiler.source>1.8</maven.compiler.source> 
+        <maven.compiler.target>1.8</maven.compiler.target> </properties>ang/commons-lang -->
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.struts/struts-taglib -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.apache.struts</groupId> -->
+        <!-- <artifactId>struts-taglib</artifactId> -->
+        <!-- <version>1.3.10</version> -->
+        <!-- </dependency> -->
+
+        <!-- https://mvnrepository.com/artifact/org.eclipse.birt.runtime/org.eclipse.birt.runtime -->
+        <dependency>
+            <groupId>org.eclipse.birt.runtime</groupId>
+            <artifactId>org.eclipse.birt.runtime</artifactId>
+            <version>4.4.2</version>
+        </dependency>
+		
+        <dependency>
+            <!-- Necessario para o BIRT -->
+
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.7</version>
+            <scope>runtime</scope>
+        </dependency>
+        
+      
+
+       <!-- <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency> -->
+        <dependency>
+            <groupId>displaytag</groupId>
+            <artifactId>displaytag</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <!-- 			<version>1.2.3</version> -->
+            <version>1.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <!-- 			<version>1.2.3</version> -->
+            <version>1.7.1</version>
+
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-csv -->
+        <!-- <dependency> -->
+        <!-- <groupId>org.apache.commons</groupId> -->
+        <!-- <artifactId>commons-csv</artifactId> -->
+        <!-- <version>1.5</version> -->
+        <!-- </dependency> -->
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.5.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- <dependency> -->
+        <!-- <groupId>org.slf4j</groupId> -->
+        <!-- <artifactId>slf4j-api</artifactId> -->
+        <!-- <version>1.7.28</version> -->
+        <!-- </dependency> -->
+
+        <!-- <dependency> -->
+        <!-- <groupId>org.slf4j</groupId> -->
+        <!-- <artifactId>slf4j-log4j12</artifactId> -->
+        <!-- <version>1.7.28</version> -->
+        <!-- </dependency> -->
+
+
+        <!-- <dependency> -->
+        <!-- <groupId>org.junit.jupiter</groupId> -->
+        <!-- <artifactId>junit-jupiter-engine</artifactId> -->
+        <!-- <version>5.5.2</version> -->
+        <!-- <scope>test</scope> -->
+        <!-- </dependency> -->
+        
+        <!-- https://mvnrepository.com/artifact/org.jboss.bom/jboss-eap -->
+<!--<dependency>
+    <groupId>org.jboss.bom</groupId>
+    <artifactId>jboss-eap</artifactId>
+    <version>7.3.0.GA</version>
+    <type>pom</type>
+</dependency>-->
+
+<!-- https://mvnrepository.com/artifact/org.codehaus.mojo/jboss-maven-plugin -->
+<!-- <dependency>
+    <groupId>org.codehaus.mojo</groupId>
+    <artifactId>jboss-maven-plugin</artifactId>
+    <version>1.5.0</version>
+</dependency> -->
+
+<!-- https://mvnrepository.com/artifact/org.wildfly.plugins/wildfly-maven-plugin -->
+<!--<dependency>
+    <groupId>org.wildfly.plugins</groupId>
+    <artifactId>wildfly-maven-plugin</artifactId>
+    <version>2.0.2.Final</version>
+</dependency> 
+-->
+
+
+    </dependencies>
+    <build>
+        <finalName>sisres</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.rptdesign</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+      
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+        
+ <!--  <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.8.1</version>
+</plugin> --> 
+<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.10.1</version>
+        </plugin>
+         <plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.1</version>
+			</plugin>
+        
+ <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.3.1</version>
+</plugin>
+
+
+      <!--    <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.2.2</version>
+  </plugin>-->
+        
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.8</version>
+            </plugin>
+            <plugin>
+            <groupId>org.jboss.as.plugins</groupId>
+            <artifactId>jboss-as-maven-plugin</artifactId>
+            <version>7.9.Final</version>
+        </plugin>
+        
+          <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>2.0.2.Final</version>
+                <configuration>
+                    <add-user>
+                        <users>
+                           <!-- <user>
+                                <username>admin</username>
+                                <password>admin.1234</password>
+                            </user> -->
+                          <user>
+                                <username>admin</username>
+                                <password>123456</password>
+                                <groups>
+                                    <group>admin</group>
+                                    <group>user</group>
+                                </groups>
+                                <application-user>true</application-user>
+                            </user>
+                          <user>
+                                <username>default-user</username>
+                                <password>user.1234</password>
+                                <groups>
+                                    <group>user</group>
+                                </groups>
+                                <application-user>true</application-user> 
+                            </user> 
+                        </users>
+                    </add-user>
+                </configuration>
+            </plugin>
+           
+
+        </plugins>
+    </reporting>
+</project>

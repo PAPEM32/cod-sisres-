@@ -1,0 +1,52 @@
+body {
+	font-family: Arial;
+}
+
+.cabecalho {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #efefef;
+}
+
+.relatorio td {
+	
+}
+
+.OC td {
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border-bottom: 2px solid #666;
+}
+
+.total td {
+	text-align: center;
+	font-size: 14px;
+	height: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	border-bottom: 2px solid #666;
+}
+
+.det td {
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #666;
+	color: white;
+	border-bottom: 2px solid #333;
+}
+
+.campos td {
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	border-bottom: 2px solid #666;
+	padding: 3px;
+}

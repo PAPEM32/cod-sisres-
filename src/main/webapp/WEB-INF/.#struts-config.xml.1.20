@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+                               "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+ <data-sources/>
+ <form-beans>
+  <!-- UC01 -->
+  <form-bean name="filtrarMatFinSispagForm" type="com.sisres.view.FiltrarMatFinSispagForm"/>
+  <form-bean name="cadastrarDivMesSispagForm" type="com.sisres.view.CadastrarDivMesSispagForm"/>
+  <!-- FIM DO UC01 
+ UC04 
+ FIM DO UC04 
+ UC05 
+ FIM DO UC05 
+ UC06 
+ FIM DO UC06 
+ UC07 -->
+  <form-bean name="consultarDividaForm" type="com.sisres.view.ConsultarDividaForm"/>
+  <!-- FIM DO UC07 
+ FIM DO UC08 
+ UC09 -->
+  <form-bean name="EstonarLancamentoRevForm" type="com.sisres.view.EstonarLancamentoRevForm"/>
+  <!-- FIM DO UC09 
+ UC11 -->
+  <form-bean name="consultarListaLancamentosForm" type="com.sisres.view.ConsultarListaLancamentosForm"/>
+  <!-- FIM DO UC11 
+ UC12 -->
+  <form-bean name="relatorioDividasOcForm" type="com.sisres.view.RelatorioDividasOcForm"/>
+  <!-- FIM DO UC12 -->
+ </form-beans>
+ <global-exceptions/>
+ <global-forwards/>
+ <action-mappings>
+  <!-- UC01 -->
+  <action input="/papem23/cadastrarDividaMes.jsp"
+   name="filtrarMatFinSispagForm"
+   path="/papem23/filtrarMatFinSispagAction" scope="request"
+   type="com.sisres.controller.FiltrarMatFinSispagAction" validate="true">
+   <forward name="success" path="/papem23/cadastrarDividaMes.jsp"/>
+   <forward name="error" path="/papem23/cadastrarDividaMes.jsp"/>
+  </action>
+  <action input="/papem23/cadastrarDividaMes.jsp"
+   name="cadastrarDivMesSispagForm"
+   path="/papem23/cadastrarDivMesSispagAction" scope="request"
+   type="com.sisres.controller.CadastrarDivMesSispagAction" validate="true">
+   <forward name="success" path="/papem23/cadastrarDividaMes.jsp"/>
+   <forward name="error" path="/papem23/cadastrarDividaMes.jsp"/>
+  </action>
+  <action path="/papem23/cadastrarDividaMesSispag" scope="request"
+   type="com.sisres.controller.CriaTelaCadastrarDivMesSispagAction" validate="false">
+   <forward name="cadastro" path="/papem23/cadastrarDividaMes.jsp"/>
+   <forward name="erro" path="/default/index.jsp"/>
+  </action>
+  <!-- FIM DO UC01 
+ UC04 
+ FIM DO UC04 
+ UC05 
+ FIM DO UC05 
+ UC06 
+ FIM DO UC06 
+ UC07 -->
+  <action input="/oc/consultarDivida.jsp" name="consultarDividaForm"
+   path="/oc/consultarDividaAction" scope="request"
+   type="com.sisres.controller.ConsultarDividaAction" validate="true">
+   <forward name="success" path="/oc/consultarDivida.jsp"/>
+   <forward name="error" path="/oc/consultarDividaDetalhe.jsp"/>
+  </action>
+  <action path="/oc/consultarDividaDetalhe" scope="request"
+   type="com.sisres.controller.ConsultarDividaDetalheAction" validate="false">
+   <forward name="detalhe" path="/oc/consultarDividaDetalhe.jsp"/>
+   <forward name="error" path="/oc/consultarDividaDetalhe.jsp"/>
+  </action>
+  <!-- FIM DO UC07 
+ UC08 
+
+  		<action path="/incluirReversaoAction" 
+  				type="com.sisres.controller.IncluirReversaoAction"
+  				name="incluirReversaoForm" scope="request" 
+  		        validate="true" input="/incluirReversao.jsp">
+  			<forward name="sucesso" path="/visualizaLancamentoDetalhado.jsp"/>
+   			<forward name="erro" path="/visualizaLancamentoDetalhado.jsp"/>
+ 	    </action>
+ 	    
+ FIM DO UC08 
+ UC09 -->
+  <action input="/oc/consultarLancamentoDetalhe.jsp"
+   name="EstonarLancamentoRevForm" path="/papem23/estornoReversao"
+   scope="request"
+   type="com.sisres.controller.EstornarLancamentoRevAction" validate="false">
+   <forward name="relatorio" path="/oc/consultarLancamentoDetalhe.jsp"/>
+   <forward name="erro" path="/oc/consultarLancamentoDetalhe.jsp"/>
+  </action>
+  <!-- FIM DO UC09 
+ FIM DO UC09 
+ UC11-->
+  <action name="consultarListaLancamentosForm"
+   path="/oc/consultarListaLancamentos" scope="request"
+   type="com.sisres.controller.ConsultarListaLancamentosAction" validate="false">
+   <forward name="lancamentos" path="/oc/consultarDividaDetalhe.jsp"/>
+   <forward name="error" path="/oc/consultarDivida.jsp"/>
+  </action>
+  <action path="/oc/consultarLancamentoDetalhe" scope="request"
+   type="com.sisres.controller.ConsultarLancamentoDetalheAction" validate="false">
+   <forward name="detLancamento" path="/oc/consultarLancamentoDetalhe.jsp"/>
+   <forward name="error" path="/oc/consultarDividaDetalhe.jsp"/>
+  </action>
+  <!-- FIM DO UC11 
+ UC12 -->
+  <action name="relatorioDividasOcForm" path="/oc/geraRelatorio"
+   scope="request" type="com.sisres.controller.RelatorioDividasOcAction" validate="true">
+   <forward name="relatorio" path="/oc/relatorioDividasOc.do"/>
+   <forward name="erro" path="/oc/relatorioDividasOc.jsp"/>
+  </action>
+  <action path="/oc/relatorioDividasOc" scope="request"
+   type="com.sisres.controller.CriaTelaRelatorioDividasOcAction" validate="false">
+   <forward name="relatorio" path="/oc/relatorioDividasOc.jsp"/>
+   <forward name="erro" path="/default/index.jsp"/>
+  </action>
+  <action name="relatorioDividasOcForm" path="/oc/testaRel"
+   scope="request"
+   type="com.sisres.controller.TestaRelatorioDividasOcAction" validate="true">
+   <forward name="sucesso" path="/oc/valida.jsp"/>
+   <forward name="error" path="/default/index.jsp"/>
+  </action>
+  <!-- FIM DO UC12 -->
+ </action-mappings>
+ <controller/>
+ <message-resources parameter="com.sisres.view.mensagensSisres"/>
+</struts-config>

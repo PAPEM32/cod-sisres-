@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="#oc#consultarLancamentoDetalhe" NAME="action0"
+  PATH="/oc/consultarLancamentoDetalhe" SHAPE="32,17,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="detLancamento" NAME="forward1"
+   PATH="/oc/consultarLancamentoDetalhe.jsp" TARGET="page7"
+   TITLE="detLancamento" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#cadastrarDivMesSispagAction" NAME="action1"
+  PATH="/papem23/cadastrarDivMesSispagAction" SHAPE="32,593,0,0"
+  TITLE="cadastrarDivMesSispagForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/papem23/cadastrarDividaMes.jsp" TARGET="page2" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/papem23/cadastrarDividaMes.jsp" TARGET="page2" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#filtrarMatFinSispagAction" NAME="action2"
+  PATH="/papem23/filtrarMatFinSispagAction" SHAPE="32,737,0,0"
+  TITLE="filtrarMatFinSispagForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/papem23/cadastrarDividaMes.jsp" TARGET="page2" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/papem23/cadastrarDividaMes.jsp" TARGET="page2" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#consultarDividaDetalhe" NAME="action3"
+  PATH="/oc/consultarDividaDetalhe" SHAPE="32,161,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="detalhe" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="detalhe"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#testaRel" NAME="action4" PATH="/oc/testaRel"
+  SHAPE="32,1025,0,0" TITLE="relatorioDividasOcForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/valida.jsp" TARGET="page4" TITLE="sucesso" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#cadastrarDividaMesSispag" NAME="action5"
+  PATH="/papem23/cadastrarDividaMesSispag" SHAPE="32,881,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="cadastro" NAME="forward0"
+   PATH="/papem23/cadastrarDividaMes.jsp" TARGET="page2"
+   TITLE="cadastro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward1"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#consultarListaLancamentos" NAME="action6"
+  PATH="/oc/consultarListaLancamentos" SHAPE="32,305,0,0"
+  TITLE="consultarListaLancamentosForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/oc/consultarDivida.jsp" TARGET="page5" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="lancamentos" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0"
+   TITLE="lancamentos" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#estornoReversao" NAME="action7"
+  PATH="/papem23/estornoReversao" SHAPE="32,1313,0,0"
+  TITLE="EstonarLancamentoRevForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="relatorio" NAME="forward0"
+   PATH="/oc/consultarLancamentoDetalhe.jsp" TARGET="page7"
+   TITLE="relatorio" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward1"
+   PATH="/oc/consultarLancamentoDetalhe.jsp" TARGET="page7" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#relatorioDividasOc" NAME="action8"
+  PATH="/oc/relatorioDividasOc" SHAPE="304,897,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="relatorio" NAME="forward0"
+   PATH="/oc/relatorioDividasOc.jsp" TARGET="page8" TITLE="relatorio"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward1"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#geraRelatorio" NAME="action9"
+  PATH="/oc/geraRelatorio" SHAPE="32,1169,0,0"
+  TITLE="relatorioDividasOcForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="relatorio" NAME="forward0"
+   PATH="/oc/relatorioDividasOc.do" TARGET="action8" TITLE="relatorio"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward1"
+   PATH="/oc/relatorioDividasOc.jsp" TARGET="page8" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#consultarDividaAction" NAME="action10"
+  PATH="/oc/consultarDividaAction" SHAPE="32,449,0,0"
+  TITLE="consultarDividaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/oc/consultarDivida.jsp" TARGET="page5" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page0" PATH="/oc/consultarDividaDetalhe.jsp"
+  SHAPE="304,34,0,0" SUBTYPE="jsp" TITLE="consultarDividaDetalhe.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page2" PATH="/papem23/cadastrarDividaMes.jsp"
+  SHAPE="304,610,0,0" SUBTYPE="jsp" TITLE="cadastrarDividaMes.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page3" PATH="/default/index.jsp"
+  SHAPE="544,882,0,0" SUBTYPE="jsp" TITLE="index.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page4" PATH="/oc/valida.jsp" SHAPE="304,1042,0,0"
+  SUBTYPE="jsp" TITLE="valida.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page5" PATH="/oc/consultarDivida.jsp"
+  SHAPE="304,322,0,0" SUBTYPE="jsp" TITLE="consultarDivida.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page8" PATH="/oc/relatorioDividasOc.jsp"
+  SHAPE="544,1026,0,0" SUBTYPE="jsp" TITLE="relatorioDividasOc.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page9" PATH="/error.jsp" SHAPE="304,1186,0,0"
+  SUBTYPE="jsp" TITLE="error.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page7" PATH="/oc/consultarLancamentoDetalhe.jsp"
+  SHAPE="240,1425,0,0" SUBTYPE="jsp"
+  TITLE="consultarLancamentoDetalhe.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#confirmarDividaHistorica" NAME="action11"
+  PATH="/papem23/confirmarDividaHistorica" SHAPE="32,1569,0,0"
+  TITLE="confirmarDividaHistoricaForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward0"
+   PATH="/papem23/confirmarDividaHistoricaEmEspera.do" TARGET="action12"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward1"
+   PATH="/papem23/confirmarDividaHistorica.jsp" TARGET="page1"
+   TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1" PATH="/papem23/confirmarDividaHistorica.jsp"
+  SHAPE="256,1842,0,0" SUBTYPE="jsp"
+  TITLE="confirmarDividaHistorica.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#confirmarDividaHistoricaEmEspera"
+  NAME="action12" PATH="/papem23/confirmarDividaHistoricaEmEspera"
+  SHAPE="304,1841,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="confirma" NAME="forward0"
+   PATH="/papem23/relacaoDividaHistorica.jsp" TARGET="page6"
+   TITLE="confirma" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward1"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page6" PATH="/papem23/relacaoDividaHistorica.jsp"
+  SHAPE="560,1826,0,0" SUBTYPE="jsp" TITLE="relacaoDividaHistorica.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#confirmarDividaHistoricaDetalhe"
+  NAME="action13" PATH="/papem23/confirmarDividaHistoricaDetalhe"
+  SHAPE="32,2225,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/papem23/confirmarDividaHistorica.jsp" TARGET="page1"
+   TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="detalhe" NAME="forward1"
+   PATH="/papem23/confirmarDividaHistorica.jsp" TARGET="page1"
+   TITLE="detalhe" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#incluirReversaoAction" NAME="action14"
+  PATH="/papem23/incluirReversaoAction" SHAPE="32,449,0,0"
+  TITLE="incluirReversaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#excluirDivida" NAME="action17"
+  PATH="/oc/excluirDivida" SHAPE="32,449,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#incluirDevolucao" NAME="action19"
+  PATH="/papem23/incluirDevolucao" SHAPE="32,2145,0,0"
+  TITLE="IncluirDevolucaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page10" PATH="/oc/alterarDivida.jsp"
+  SHAPE="256,2962,0,0" SUBTYPE="jsp" TITLE="alterarDivida.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page11" PATH="/success.jsp" SHAPE="256,2818,0,0"
+  SUBTYPE="jsp" TITLE="success.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#sipm#filtrarMatFinDivHistoricaSispagAction"
+  NAME="action20" PATH="/sipm/filtrarMatFinDivHistoricaSispagAction"
+  SHAPE="32,3553,0,0" TITLE="filtrarMatFinDivHistoricaSispagForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/sipm/relaDividaHistorica.jsp" TARGET="page17" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#sipm#cadastrarDivHistoricaSispagAction"
+  NAME="action21" PATH="/sipm/cadastrarDivHistoricaSispagAction"
+  SHAPE="32,3697,0,0" TITLE="cadastrarDivHistoricaSispagForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#sipm#cadastrarDividaHistoricaSispag" NAME="action22"
+  PATH="/sipm/cadastrarDividaHistoricaSispag" SHAPE="32,3841,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0" PATH="/index.jsp"
+   TARGET="page13" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="cadastro" NAME="forward1"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="cadastro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page13" PATH="/index.jsp" SHAPE="304,3858,0,0"
+  SUBTYPE="jsp" TITLE="index.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#sipm#filtrarDividaHistAction" NAME="action23"
+  PATH="/sipm/filtrarDividaHistAction" SHAPE="32,4145,0,0"
+  TITLE="filtrarDividaHistForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/sipm/cadastrarDividaHistorica.jsp" TARGET="page15"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page14" PATH="/papem23/valida.jsp"
+  SHAPE="240,4145,0,0" SUBTYPE="jsp" TITLE="valida.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#geraRelatorioMovimentacao" NAME="action24"
+  PATH="/papem23/geraRelatorioMovimentacao" SHAPE="32,4913,0,0"
+  TITLE="relatorioMovimentacaoSisresForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/papem23/relatorioMovimentacaoSisres.jsp" TARGET="page16"
+   TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="relatorio" NAME="forward1"
+   PATH="/papem23/geraRelatorioMovimentacao.do" TARGET="action24"
+   TITLE="relatorio" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page16"
+  PATH="/papem23/relatorioMovimentacaoSisres.jsp" SHAPE="256,4930,0,0"
+  SUBTYPE="jsp" TITLE="relatorioMovimentacaoSisres.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page17" PATH="/sipm/relaDividaHistorica.jsp"
+  SHAPE="240,3665,0,0" SUBTYPE="jsp" TITLE="relaDividaHistorica.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page15" PATH="/sipm/cadastrarDividaHistorica.jsp"
+  SHAPE="448,3553,0,0" SUBTYPE="jsp"
+  TITLE="cadastrarDividaHistorica.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page12" PATH="/papem23/incluirDevolucao.jsp"
+  SHAPE="240,1969,0,0" SUBTYPE="jsp" TITLE="incluirDevolucao.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#incluirPerdao" NAME="action25"
+  PATH="/papem23/incluirPerdao" SHAPE="32,449,0,0"
+  TITLE="IncluirPerdaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/consultarDividaDetalhe.jsp" TARGET="page0" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#filtrarPedidoReversaoAction" NAME="action26"
+  PATH="/papem23/filtrarPedidoReversaoAction" SHAPE="32,5729,0,0"
+  TITLE="filtrarPedidoReversaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page18" PATH="/papem23/gerarPedidoReversao.jsp"
+  SHAPE="288,5746,0,0" SUBTYPE="jsp" TITLE="gerarPedidoReversao.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#papem23#gerarPedidoReversaoAction" NAME="action27"
+  PATH="/papem23/gerarPedidoReversaoAction" SHAPE="32,5873,0,0"
+  TITLE="gerarPedidoReversaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/papem23/gerarRelPedidoReversao.do" TARGET="action28"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#gerarRelPedidoReversao" NAME="action28"
+  PATH="/papem23/gerarRelPedidoReversao" SHAPE="32,6689,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#criaConsultaReversao" NAME="action15"
+  PATH="/papem23/criaConsultaReversao" SHAPE="304,1041,0,0"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="cadastro" NAME="forward1"
+   PATH="/papem23/consultarReversao.jsp" TARGET="page19"
+   TITLE="cadastro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#criaConsultaDivida" NAME="action16"
+  PATH="/oc/criaConsultaDivida" SHAPE="32,449,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="cadastro" NAME="forward1"
+   PATH="/oc/consultarDivida.jsp" TARGET="page5" TITLE="cadastro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#sipm#geraArquivo" NAME="action18"
+  PATH="/sipm/geraArquivo" SHAPE="32,5761,0,0"
+  TITLE="gerarArquivoDividasSIPMForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/sipm/gerarArquivoSIPM.jsp" TARGET="page20" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/sipm/gerarArquivoSIPM.jsp" TARGET="page20" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#consultarReversaoAction" NAME="action29"
+  PATH="/papem23/consultarReversaoAction" SHAPE="304,897,0,0"
+  TITLE="consultarReversaoForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/papem23/consultarReversao.jsp" TARGET="page19" TITLE="error"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/papem23/consultarReversao.jsp" TARGET="page19" TITLE="success"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#gerarReversao" NAME="action30"
+  PATH="/papem23/gerarReversao" SHAPE="32,4545,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0" PATH="/index.jsp"
+   TARGET="page13" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="filtrar" NAME="forward1"
+   PATH="/papem23/gerarPedidoReversao.jsp" TARGET="page18"
+   TITLE="filtrar" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#cadastrarDividaHistoricaSiapeAction"
+  NAME="action31" PATH="/papem23/cadastrarDividaHistoricaSiapeAction"
+  SHAPE="32,5905,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/papem23/cadastrarDividaHistoricaSiape.jsp" TARGET="page21"
+   TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="success" NAME="forward1"
+   PATH="/papem23/cadastrarDividaHistoricaSiape.jsp" TARGET="page21"
+   TITLE="success" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#OC#insereRespareg" NAME="action32"
+  PATH="/OC/insereRespareg" SHAPE="304,609,0,0" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="erro" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#oc#AlterarDividaAction" NAME="action33"
+  PATH="/oc/AlterarDividaAction" SHAPE="32,3409,0,0"
+  TITLE="alterarDividaMesSispagForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="erro" NAME="forward0"
+   PATH="/oc/alterarDivida.jsp" TARGET="page10" TITLE="erro"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/alterarDivida.jsp" TARGET="page10" TITLE="sucesso"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#papem23#testaRel2" NAME="action34"
+  PATH="/papem23/testaRel2" SHAPE="32,1169,0,0"
+  TITLE="relatorioMovimentacaoSisresForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="error" NAME="forward0"
+   PATH="/default/index.jsp" TARGET="page3" TITLE="error" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="sucesso" NAME="forward1"
+   PATH="/oc/valida.jsp" TARGET="page4" TITLE="sucesso" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page19" PATH="/papem23/consultarReversao.jsp"
+  SHAPE="576,1170,0,0" SUBTYPE="jsp" TITLE="consultarReversao.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page20" PATH="/sipm/gerarArquivoSIPM.jsp"
+  SHAPE="256,5778,0,0" SUBTYPE="jsp" TITLE="gerarArquivoSIPM.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page21"
+  PATH="/papem23/cadastrarDividaHistoricaSiape.jsp" SHAPE="256,5922,0,0"
+  SUBTYPE="jsp" TITLE="cadastrarDividaHistoricaSiape.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

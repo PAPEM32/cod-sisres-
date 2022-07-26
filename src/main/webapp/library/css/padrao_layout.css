@@ -1,0 +1,553 @@
+@charset "utf-8";
+/* Padrão do layout */
+img {
+	border: 0px solid white;
+	background-repeat: no-repeat;
+}
+
+html {
+	overflow: auto;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #333333;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	background-image: url("../../imagens/fundoBg.png");
+	background-repeat: repeat-x;
+}
+
+/* FORM padrão */
+form {
+	margin: 0px;
+}
+
+.nodisplay {
+	display: none;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.default {
+	cursor: default;
+}
+
+/*CSS Overall*/
+.overall {
+	width: 100%;
+	float: left;
+}
+
+.container {
+	width: 98.5%;
+	float: left;
+	padding: 5px;
+}
+
+/*CSS Cabeçalho*/
+.cabecalho {
+	width: 100%;
+	float: left;
+	background-image: url('../../imagens/fundo_cabecalho.jpg');
+	background-repeat: repeat-x;
+	border: 1px solid black;
+}
+
+.logo {
+	width: 197px;
+	height: 100px;
+	background: url(../../imagens/logo2.jpg) no-repeat;
+	float: left;
+}
+
+.usuario {
+	float: right;
+	color: white;
+	margin-top: 5px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.usuario a {
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}
+
+.usuario a:hover {
+	text-decoration: underline;
+}
+
+/*Formulário*/
+.titulo {
+	background-image: url("../../imagens/tituloFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid black;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	margin-top: 5px;
+	line-height: 24px;
+	width: 100%;
+	text-indent: 15px;
+	font-size: 16px;
+}
+
+.subtitulo {
+	background-image: url("../../imagens/subtituloFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+	margin: 8px 5px 0px 5px;
+	line-height: 20px;
+	text-indent: 12px;
+}
+
+.subtituloEnfase {
+	/*background-image:url("../../imagens/subtituloFundo_cadastro.jpg");*/
+	background-image: url("../../imagens/tituloFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #4887af;
+	font-weight: bold;
+	color: #FFF;
+	text-align: left;
+	margin: 8px 5px 0px 5px;
+	line-height: 20px;
+	text-indent: 12px;
+}
+
+.corpoTitulo {
+	border: 1px solid #ccc;
+	width: 100%;
+	text-align: left;
+}
+
+.corpoSubTitulo {
+	border: 1px solid #ccc;
+	background-color: #f4f4f4;
+	margin: 0px 5px 5px 5px;
+	text-align: left;
+	padding: 3px;
+}
+
+.corpoSubTituloEnfase {
+	border-left: 1px solid #4887af;
+	border-right: 1px solid #4887af;
+	border-bottom: 1px solid #4887af;
+	background-color: #f9fafb;
+	margin: 0px 5px 5px 5px;
+	text-align: left;
+	padding: 3px;
+}
+
+.formConsulta {
+	/*color: black;
+	font-size: 12px;
+	font-weight: bold;*/
+	background-color: #f4f4f4;
+}
+
+.formConsulta td {
+	/*background-color: #fff;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #ccc;*/
+	border: 1px solid #b0b0b0;
+	/*font-weight: bold; COMENTADO POR 3SG WALLACE ROQUE*/
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.formConsulta select {
+	height: 18px;
+	line-height: 18px;
+	font-size: 11px;
+}
+
+.formConsulta input {
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.formMovimentacaoSisres input {
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+}
+
+.formConsulta input[disabled] {
+	height: 13px;
+	line-height: 13px;
+	font-size: 11px;
+	text-transform: uppercase;
+	background-color: #efefef;
+	border: 1px solid #7f9db9;
+}
+
+.branco {
+	background-color: #fff;
+	font-weight: bold; /*ADICIONADO POR 3SG WALLACE ROQUE*/
+}
+
+.cinza {
+	background-color: #e1e2e2;
+}
+
+.cinzaE {
+	background-color: #ccc;
+	font-weight: bold; /*ADICIONADO POR 3SG WALLACE ROQUE*/
+}
+
+.headLista {
+	background-color: #054b8b;
+	color: white;
+}
+
+.headLista td {
+	/*background-color: #fff;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #ccc;*/
+	border: 1px solid #b0b0b0;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.headLista th {
+	/*background-color: #fff;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #ccc;*/
+	border: 1px solid #b0b0b0;
+	font-weight: bold;
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+	background-image: url(../../imagens/bg.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.footLista {
+	background-color: #999;
+	color: white;
+}
+
+.footLista th {
+	/*background-color: #fff;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #efefef;
+	border-right: 1px solid #ccc;*/
+	border: 1px solid #b0b0b0;
+	font-weight: normal;
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+	white-space: nowrap;
+}
+
+.elLista {
+	color: black;
+}
+
+.elLista td {
+	border: 1px solid #b0b0b0;
+	padding: 2px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+/*CÓDIGO INCLUÍDO POR 3SG WALLACE ROQUE*/
+.linha_par {
+	background: #fff;
+}
+
+.center {
+	text-align: center;
+}
+
+.barraBts {
+	background-color: #ccc;
+	margin: 0px 5px 5px 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+.barraBts a {
+	background-image: url("../../imagens/btFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	text-decoration: none;
+	color: #333;
+	padding: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 11px;
+}
+
+.barraBts a:hover {
+	background-image: url("../../imagens/btFundoHover.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	color: white;
+}
+
+.formBt a {
+	background-image: url("../../imagens/btFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	text-decoration: none;
+	color: #333;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 11px;
+}
+
+.formBt a:hover {
+	background-image: url("../../imagens/btFundoHover.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #999;
+	color: white;
+}
+
+/*Estilização das caixas de alerta*/
+.caixa {
+	display: block;
+	color: white;
+	font-size: 14px;
+	position: relative;
+	top: 40%;
+	width: 70%;
+	padding: 20px;
+}
+
+.caixa_sucesso {
+	background-color: #70b151;
+	border: 1px solid #355824;
+}
+
+.caixa_erro {
+	background-color: #f00;
+	border: 1px solid #900;
+}
+
+.wait {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*background-color:#DDDDDD;*/
+	background-image: url("../../imagens/fundo.png");
+	background-repeat: repeat;
+	width: 100%;
+	height: 100%;
+	/*opacity:.4;
+	-moz-opacity:.4;
+	filter:alpha(opacity=40);*/
+	z-index: 5;
+}
+
+.wait a {
+	background-image: url("../../imagens/btFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #000;
+	text-decoration: none;
+	color: #333;
+	padding: 5px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 11px;
+}
+
+.wait a:hover {
+	background-image: url("../../imagens/btFundoHover.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid #666;
+	color: white;
+}
+
+/*Fim da estilização das caixas de alerta*/
+.ie .radioRack {
+	position: relative;
+	top: -2px;
+}
+
+/*Rodapé*/
+.rodape {
+	background-image: url("../../imagens/rodapeFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid black;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+	margin-top: 5px;
+	line-height: 13px;
+	width: 100%;
+	text-indent: 12px;
+}
+/*Estilização do Menu*/
+.menu {
+	width: 100%;
+	float: left;
+	background-image: url("../../imagens/menuFundo.jpg");
+	background-repeat: repeat-x;
+	border: 1px solid black;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	text-align: left;
+}
+
+.nav {
+	/*background:#6E9F1F url("../multi-level-navigation-plugin/images/suckerfish_green.png") repeat-x;
+font-size:18px;
+font-family:verdana,sans-serif;
+font-weight:bold;*/
+	width: 100%;
+}
+
+.nav, .nav ul {
+	float: left;
+	list-style: none;
+	line-height: 20px;
+	padding: 0;
+	margin: 0 -1px;
+	width: 100%;
+	z-index: 50;
+	/*valor alto para menu permanecer em uma camada alta que outros elementos com exceção das caixas de diálogo e da overlay.*/
+}
+
+.nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 10px;
+}
+
+.nav li {
+	float: left;
+	padding: 0 5px;
+}
+
+.nav ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 160px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1;
+	border: 0;
+	border-top: 1px solid #666;
+}
+
+.nav li li {
+	width: 149px;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	/*font-weight:bold;
+font-family:verdana,sans-serif;*/
+}
+
+.nav li li a {
+	padding: 4px 10px;
+	width: 130px;
+	/*font-size:12px;*/
+	color: #fff;
+}
+
+.nav li ul ul {
+	margin: -21px 0 0 150px;
+}
+
+.nav li li:hover {
+	/*background:#6E9F1F;*/
+	background: #0066CC;
+}
+
+.nav li ul li:hover a, .nav li ul li li:hover a, .nav li ul li li li:hover a,
+	.nav li ul li li li:hover a {
+	color: #fff;
+}
+
+.nav li:hover a, .nav li.sfhover a {
+	color: #fff;
+}
+
+.nav li:hover li a, .nav li li:hover li a, .nav li li li:hover li a,
+	.nav li li li li:hover li a {
+	color: #dddddd;
+}
+
+.nav li:hover ul ul, .nav li:hover ul ul ul, .nav li:hover ul ul ul ul,
+	.nav li.sfhover ul ul, .nav li.sfhover ul ul ul, .nav li.sfhover ul ul ul ul
+	{
+	left: -999em;
+}
+
+.nav li:hover ul, .nav li li:hover ul, .nav li li li:hover ul, .nav li li li li:hover ul,
+	.nav li.sfhover ul, .nav li li.sfhover ul, .nav li li li.sfhover ul,
+	.nav li li li li.sfhover ul {
+	left: auto;
+	background: #444444;
+}
+
+.nav li:hover, .nav li.sfhover {
+	/*background:#9DDD35;*/
+	background: #0066CC;
+}
+
+
+#topo-carrinho {
+  margin: auto;
+/*   float:center; */
+  padding-top:10px;
+  padding-right:10px;
+  width:500px;
+/*   height:40px; */
+/*   text-align:right; */
+}
+
+	
+#topo-carrinho a {
+  color:#FFFFFF;
+  text-decoration:none;
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.16" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Versão 2.3.0.v20080606 Build &lt;2.3.0.v20080606-0630></property>
+    <styles>
+        <style name="crosstab" id="2">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="3">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="body" id="5">
+            <property name="fontFamily">"Arial"</property>
+        </style>
+        <style name="cabecalho" id="6">
+            <property name="backgroundColor">#EFEFEF</property>
+            <property name="fontSize">12px</property>
+            <property name="fontWeight">bold</property>
+            <property name="textAlign">center</property>
+        </style>
+        <style name="relatoriotd" id="7"/>
+        <style name="octd" id="8">
+            <property name="backgroundColor">black</property>
+            <property name="fontSize">12px</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">white</property>
+            <property name="borderBottomColor">#666666</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">2px</property>
+            <property name="textAlign">center</property>
+        </style>
+        <style name="totaltd" id="9">
+            <property name="backgroundColor">black</property>
+            <property name="fontSize">14px</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">white</property>
+            <property name="borderBottomColor">#666666</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">2px</property>
+            <property name="textAlign">center</property>
+            <property name="lineHeight">24px</property>
+        </style>
+        <style name="dettd" id="10">
+            <property name="backgroundColor">#666666</property>
+            <property name="fontSize">10px</property>
+            <property name="fontWeight">bold</property>
+            <property name="color">white</property>
+            <property name="borderBottomColor">#333333</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">2px</property>
+            <property name="textAlign">center</property>
+        </style>
+        <style name="campostd" id="11">
+            <property name="fontSize">10px</property>
+            <property name="fontWeight">bold</property>
+            <property name="borderBottomColor">#666666</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">2px</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1px</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1px</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1px</property>
+            <property name="paddingTop">3px</property>
+            <property name="paddingLeft">3px</property>
+            <property name="paddingBottom">3px</property>
+            <property name="paddingRight">3px</property>
+            <property name="textAlign">center</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Page Master" id="4">
+            <property name="orientation">landscape</property>
+            <property name="topMargin">0.2in</property>
+            <property name="leftMargin">0.2in</property>
+            <property name="bottomMargin">0.2in</property>
+            <property name="rightMargin">0.2in</property>
+            <property name="setPageType">A4</property>
+        </simple-master-page>
+    </page-setup>
+    
+</report>
